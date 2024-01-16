@@ -3,15 +3,19 @@ return {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  
+
   "folke/which-key.nvim",
   "rebelot/kanagawa.nvim",
 
   {
+    'akinsho/bufferline.nvim',
+    version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
+  },
+  {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" }
   },
-  
+
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
   "hrsh7th/cmp-nvim-lsp",
